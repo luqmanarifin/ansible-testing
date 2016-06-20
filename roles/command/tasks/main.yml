@@ -1,0 +1,6 @@
+- name: Testing echo
+  command: echo "Hello world!"
+
+- name: Upload zip file to the server
+  command: curl --form "datafile=@a.zip;filename=lala.zip" --form label=commit_hash --form build_number=1234 http://a:a@localhost:9000/revision_upload
+

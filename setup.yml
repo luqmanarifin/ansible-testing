@@ -1,0 +1,11 @@
+---
+## file: setup.yml
+
+## usage: ./ansible-playbook-local.sh setup.yml
+
+- hosts: localhost
+  vars:
+    group_role: "common"
+  roles:
+    - command
+
